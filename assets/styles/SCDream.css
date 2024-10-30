@@ -49,3 +49,11 @@
   font-display: swap;
   font-weight: 600;
 }
+@font-face {
+  font-family: 'SCDream';
+  src: local('SCDream'),
+   url(../fonts/SCDream7.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
