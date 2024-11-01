@@ -30,7 +30,7 @@
 </head>
 
 <body>
-
+  <div class="cursor">View</div>
   <header>
     <div class="header-wrapper flex-container">
       <h1 class="logo">
@@ -179,7 +179,7 @@
           <img src="https://placehold.co/1000x600/9B7EBD/fff?text=PJ1" alt="메인프로젝트1">
         </div>
         <a href="#" class="overlay"></a>
-        <div class="cursor link-grow">View</div>
+        
       </li>
       <li class="main-project-list-background">
         <p>App UI/UX 개선</p>
@@ -206,7 +206,7 @@
     <ul class="gnb flex-container">
       <li><a href="#project">Project</a></li>
       <li><a href="#about">About</a></li>
-      <li><img src="./assets/images/download1.svg" alt="글로벌네비게이션바의 로고이미지입니다."></li>
+      <li><img src="./assets/images/Artboard 1.png" alt="글로벌네비게이션바의 로고이미지입니다."></li>
       <li><a href="#skill">Skill</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -371,15 +371,60 @@
       });
     });
   </script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const cursorElement = document.querySelector('.cursor');
+  const backgroundElements = document.querySelectorAll('.main-project-list-background');
+  let cursorTimeout;
 
-<script>
- var cursor = document.querySelector(".cursor");
- document.addEventListener("mousemove", (event) => {
-  cursor.style.left = event.clientX - cursor.offsetWidth / 2 + "px";
-  cursor.style.top = event.clientY - cursor.offsetHeight / 2 + "px";
+  // Start with the cursor hidden off-screen
+  cursorElement.style.display = 'none';
+  cursorElement.style.left = '-1000px'; // Position off-screen
 
-  cursor.classList.remove("active");
-</script>
+  backgroundElements.forEach(background => {
+    background.addEventListener('mouseenter', () => {
+      // Delay the cursor visibility by 0.3 seconds
+      cursorTimeout = setTimeout(() => {
+        cursorElement.style.display = 'flex'; // Show the cursor after delay
+        cursorElement.style.width = '60px'; // Start very small
+        cursorElement.style.height = '60px';
+        cursorElement.style.fontSize = '0'; // No text initially
+
+        // Delay briefly to start with a small circle
+        setTimeout(() => {
+          cursorElement.style.width = '150px'; // Grow to full size
+          cursorElement.style.height = '150px';
+          cursorElement.style.fontSize = '20px'; // Show text at full size
+
+          // Shrink slightly for the spring effect, with a slower transition
+          setTimeout(() => {
+            cursorElement.style.transition = 'width 0.2s ease, height 0.2s ease'; // Slow down transition
+            cursorElement.style.width = '140px';
+            cursorElement.style.height = '140px';
+          }, 300); // Delay for slower shrink after full growth
+
+        }, 50); // Initial delay for small circle effect
+      }, 300); // 0.3s delay before cursor becomes visible
+    });
+
+    background.addEventListener('mousemove', (e) => {
+      cursorElement.style.left = `${e.pageX}px`;
+      cursorElement.style.top = `${e.pageY}px`;
+      cursorElement.style.transform = 'translate(-50%, -50%)'; // Center the cursor
+    });
+
+    background.addEventListener('mouseleave', () => {
+      clearTimeout(cursorTimeout); // Cancel visibility delay if mouse leaves early
+      cursorElement.style.display = 'none'; // Hide cursor when leaving card
+      cursorElement.style.width = '60px'; // Reset size
+      cursorElement.style.height = '60px';
+      cursorElement.style.fontSize = '0'; // Hide text
+      cursorElement.style.transition = 'width 0.3s ease, height 0.3s ease'; // Reset transition speed
+    });
+  });
+});
+  </script>
+
 </body>
 
 </html>
