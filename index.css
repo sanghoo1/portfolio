@@ -38,6 +38,13 @@ header .header-nav .global-menu li a{
   padding: 8px 12px ;
   font-size: 20px;
   font-weight: 600;
+  transition: 0.3s;
+
+}
+header .header-nav .global-menu li a:hover{
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 100px;
 }
 header .header-nav .global-menu{
   gap:12px;
@@ -188,52 +195,97 @@ header .header-nav .global-menu{
 
   margin: 0 104px;
 }
+
+
 .main-project .main-project-wrapper{
   margin: 7.813vh 0 7.813vh 136px;
   gap:180px;
   
+  
 
 }
-.main-project .main-project-wrapper li{
-
-  
-  width: 460px;
-  
-}
-.main-project .main-project-wrapper li .main-project-list-overlay{
-  width: 460px;
-}
-.main-project .main-project-wrapper li .main-project-list-overlay a{
-  display: block;
-  width: 460px;
-}
-.main-project .main-project-wrapper li .main-project-list-overlay a  
-.main-project-list-background{
+.main-project .main-project-wrapper .main-project-list-background{
   border-radius: 8px;
   background: url(https://picsum.photos/id/235/1200/800) no-repeat 50% / cover;
-  width: 460px;
+  width: 440px;
   height: 56.771vh;
+  position: relative;
+ 
   
 }
-.main-project .main-project-wrapper li .main-project-list-overlay a 
-.main-project-list-background p {
+.main-project .main-project-wrapper .main-project-list-background:hover a{
+  width: 440px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top:0;
+  background-color:rgba(232, 233, 251, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  transition: 0.7s;
+  z-index: 9;
+
+  
+}
+#mouse-cursor{
+  position: absolute;
+  top:0;
+  left: 0;
+  will-change: transform;
+  transform: translate3d(100px,100px,0);
+  pointer-events: none;
+}
+#mouse-cursor > div {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  font-size: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --cursor-scale:1;
+  transform: scale3d(var(--cursor-scale),var(--cursor-scale),1);
+  will-change: transform;
+  transition: transform 150ms ease-in-out, background-color 150ms ease-in-out ;
+
+}
+#mouse-cursor > div::after{
+  content: attr(data-name);
+  position: absolute;
+  color: #fff;
+  transform: scale(0.45);
+  white-space: nowrap;
+}
+
+
+
+
+
+.main-project .main-project-wrapper .main-project-list-background  p {
   color: var(--color-secondary);
   font-size: 20px;
   font-weight: 500;
   padding: 24px;
+  position: absolute;
+  z-index: 9999;
+  top:0;
 }
-.main-project .main-project-wrapper li .main-project-list-overlay a 
-.main-project-list-background .main-project-list{
-  margin: 9.776vh auto;
-  width: 420px;
+.main-project .main-project-wrapper .main-project-list-background .main-project-list-wrapper{
+  border-radius: 4px;
 }
-.main-project .main-project-wrapper li .main-project-list-overlay a 
-.main-project-list-background .main-project-list img{
-  display: block;
-  width: 420px;
+.main-project .main-project-wrapper .main-project-list-background  img{
+  
+  width: 400px;
   height: 235px;
   object-fit: cover;
   border-radius: 4px;
+  place-items: center;
+  margin: 17vh 20px;
+  
+  
+ 
 }
 
 /**** gnb ****/
@@ -252,6 +304,7 @@ header .header-nav .global-menu{
   font-weight: 500;
   font-size: 22px;
 }
+
 .gnb li img{
   width: 34px;
   height: 57px;
