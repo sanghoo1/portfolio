@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'geist';
+  src: local('geist-Black'),
+   url(../fonts/Geist-Black.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'geist';
+  src: local('geist-Bold'),
+   url(../fonts/Geist-Bold.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'geist';
+  src: local('geist-Semibold'),
+   url(../fonts/Geist-SemiBold.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: 'geist';
+  src: local('geist-Medium'),
+   url(../fonts/Geist-Medium.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'geist';
+  src: local('geist-Regular'),
+   url(../fonts/Geist-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+
+

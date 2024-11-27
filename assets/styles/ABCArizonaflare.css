@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'ABCArizonaflare';
+  src: local('ABCArizonaflare'),
+   url(../fonts/ABCArizonaflare.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}

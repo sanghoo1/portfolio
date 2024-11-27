@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/****  fonts ****/
+
+@import url(./geist.css);
+
+@import url(./SCDream.css);
+@import url(./TitanOne.css);
+
+
+/****  css 변수 ****/
+:root{
+  --font-main-ko : 'SCDream',-apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+  --font-main-en : 'geist',-apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+
+  --color-primary : #C95933;
+  --color-secondary : #F8EBD3;
+  --color-teriary:#FFA704;
+
+
+  --font-main-title-xxlg:8.75rem; /*  140px */
+  --font-main-title-xlg:7.688rem; /* 123px */
+  --font-main-title-lg:5.813rem; /* 93px */
+  --font-main-title-md:4.375rem; /* 70px */
+  --font-main-tilte-sm:3rem; /* 48px*/
+  --font-main-title-xsm:2rem; /* 32px */
+
+  --font-basic-xxlg:1.5rem; /* 24px */
+  --font-basic-xlg:1.375rem; /* 22px */
+  --font-basic-lg:1.25rem; /* 20px */
+  --font-basic-md:1.125rem; /* 18px */
+
+  --spacing-xxlg:6.5rem; /*  104px */
+  --spacing-xlg:3rem; /* 48px */
+  --spacing-lg:2rem; /*  32px */
+  --spacing-md:1.5rem; /* 24px */
+  --spacing-sm:0.75rem /* 12px */
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+.grid-container{
+  display: grid;
+}
+
+body{
+  font-family: var(--font-main-ko);
+  color: var(--bg-gray);
+  word-break: break-all;
+  word-wrap: break-word;
+
+  background-color: var(--color-secondary);
+}

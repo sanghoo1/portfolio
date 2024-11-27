@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'TitanOne';
+  src: local('TitanOne'), 
+  url(../fonts/TitanOne-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
