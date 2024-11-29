@@ -320,10 +320,13 @@ header .header-nav .global-menu{
   cursor: none;
 }
 .front1{
-  background: url(https://picsum.photos/id/60/440/580);
+  background: url(./assets/images/키니케어백그라운드.png);
+}
+.front2{
+  background: url(./assets/images/11번가십일절백그라운드.png);
 }
 .front4{
-  background: url(https://picsum.photos/id/499/440/580);
+  background: url(./assets/images/소이프백그라운드.png);
 }
 .overlay {
   cursor: none;
