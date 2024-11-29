@@ -665,3 +665,57 @@ h1 a{
 .mySwiper2 .swiper-pagination-bullet-active {
   background-color: #fff;
 }
+
+footer{
+  padding: 60px 60px 100px;
+  background-color: #333;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+footer h2{
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+footer ul li{
+  
+  line-height: 1.6;
+}
+footer h3{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+footer .delivery-information p{
+  line-height: 1.6;
+}
+
+.sns ul{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.sns ul li span{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.sns svg{
+  width: auto;
+  height: auto;
+}
+.sns ul li p{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
