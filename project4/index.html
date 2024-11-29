@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project4</title>
+  <link rel="stylesheet" href="../assets/styles/reset.min.css">
+  <link rel="stylesheet" href="../assets/styles/ABCArizonaflare.css">
+  <link rel="stylesheet" href="../assets/styles/pretendardvariable.css">
+  <link rel="stylesheet" href="../assets/styles/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="./index.css">
+  <script src="../assets/scripts/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="gnb">
+      <h1 class="logo">
+        <span class="sr-only">logo</span>
+        <a href="#"><svg width="29" height="29" fill="none" viewBox="0 0 29 29" aria-hidden="true">
+            <g fill-rule="evenodd" clip-rule="evenodd">
+              <path fill="#03C75A" d="M0 29h29V0H0v29Z"></path>
+              <path fill="#fff"
+                d="M16.803 14.957 12.007 8.03H8.03V20.97h4.166v-6.923l4.796 6.923h3.976V8.03h-4.166v6.926Z"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="#" class="logo22">
+          <svg width="66" height="23" fill="none" viewBox="0 0 66 23" aria-hidden="true" class="logo2">
+            <path fill="#1DBF49"
+              d="M2.923 5.613h-.675c-.525.075-.975 0-1.425-.223-.3-.15-.525-.373-.6-.67-.075-.224-.075-.523-.075-.746 0-.224.075-.447.075-.596.525.074.975.149 1.5.149s1.2.074 1.65.074h1.875c0-.521-.075-1.117-.225-1.639-.075-.373-.225-.745-.3-1.118.375-.074.75-.149 1.2-.223.45-.075.9-.075 1.35 0 .375.074.75.223 1.05.521.3.298.45.745.375 1.193 0 .447-.075.894-.15 1.266h3.3c.675 0 1.125.298 1.125.969 0 .67-.3.969-1.05.969h-7.95c-.075.074-.75.074-1.05.074">
+            </path>
+            <path fill="#1DBF49" fill-rule="evenodd"
+              d="M10.65 7.402c1.05.67 1.65 1.937 1.575 3.204 0 1.341-.6 2.608-1.65 3.353-1.125.82-2.475 1.267-3.825 1.192-1.35.075-2.775-.372-3.9-1.192-.975-.82-1.575-2.086-1.5-3.353-.075-1.267.525-2.46 1.575-3.204C4.05 6.656 5.4 6.284 6.75 6.284s2.7.372 3.9 1.118Zm-2.4 4.992c.45-.521.675-1.117.6-1.788 0-.596-.225-1.267-.6-1.863a2.101 2.101 0 0 0-1.5-.596c-.525 0-1.125.223-1.5.596-.375.522-.6 1.192-.525 1.863 0 .67.15 1.267.6 1.788l.15.15c.825.744 2.025.67 2.775-.15Z"
+              clip-rule="evenodd"></path>
+            <path fill="#1DBF49"
+              d="M16.577 7.402h1.65V3.229c0-.447-.075-.894-.15-1.342-.075-.447-.15-.894-.3-1.34.375-.075.75-.15 1.125-.15.45 0 .825 0 1.275.075.375 0 .75.223 1.05.596.225.372.3.82.3 1.267v14.977c0 .522-.15.969-.525 1.416-.3.373-.75.596-1.275.596h-.675c-.225 0-.375-.074-.525-.149a.577.577 0 0 1-.15-.596V9.637h-1.725v7.452c0 .521-.15.968-.525 1.416-.3.372-.75.596-1.2.596h-.6c-.225 0-.375-.075-.6-.15a.843.843 0 0 1-.225-.596V3.601c0-.447-.075-.894-.15-1.341-.075-.522-.225-.969-.375-1.416.45-.074.825-.149 1.2-.149s.75 0 1.125.075c.45 0 .825.223 1.05.596.225.372.3.82.3 1.267v1.192c0 .447-.075.82-.075 1.118v2.459Z">
+            </path>
+            <path fill="#1DBF49" fill-rule="evenodd"
+              d="M42.525.323c.375.074.75.298.975.67.075.187.15.391.225.596.075.205.15.41.225.597v15.126c0 .522-.225 1.043-.525 1.416-.375.447-.825.67-1.35.67h-.9a.586.586 0 0 1-.6-.148.843.843 0 0 1-.225-.596V13.81a5.94 5.94 0 0 1-2.25.894c-1.425.224-2.85.298-4.275.298H26.625c-.525.075-1.05-.074-1.5-.298-.3-.149-.525-.447-.675-.745-.075-.223-.075-.447-.075-.67.075-.299.075-.522.075-.671.225.037.488.056.75.074.262.019.525.037.75.075.45.074.825.074 1.2.074L27 3.974c-.45.074-.9 0-1.35-.224-.3-.149-.525-.447-.675-.745-.075-.223-.075-.447-.075-.67 0-.124.023-.247.043-.357.017-.09.032-.173.032-.24.233.039.486.058.749.077.245.018.498.037.751.072.525.075 1.2.075 1.65.075H37.5c.3-.075.675.074.9.298.225.15.3.373.3.67 0 .224-.15.522-.3.671-.3.224-.6.373-.9.373h-.75l-.225 8.793c.216-.036.431-.054.639-.072.225-.02.44-.038.636-.077.9-.075 1.725-.298 2.475-.745V3.154c0-.447-.075-.894-.15-1.341C40.05 1.29 39.9.844 39.75.397c.225-.037.45-.056.675-.074.225-.019.45-.038.675-.075.45-.074.975 0 1.425.075ZM30.45 12.767h2.625l.15-8.868H30.3l.15 8.868Z"
+              clip-rule="evenodd"></path>
+            <path fill="#14A03A"
+              d="M62.172 13.363v3.055c0 .224.075.373.225.522.15.149.375.223.6.149h.9c.525 0 .975-.224 1.275-.596.3-.373.45-.895.45-1.342V2.26c0-.447-.075-.82-.225-1.192a1.669 1.669 0 0 0-.975-.596c-.45-.15-.9-.15-1.35-.15-.45 0-.825.075-1.275.15.15.447.3.894.375 1.34.075.448.075.895.075 1.268-.075 0-.075 10.283-.075 10.283Z">
+            </path>
+            <path fill="#14A03A" fill-rule="evenodd"
+              d="M58.952 10.83c0 .67-.225 1.34-.75 1.788-.45.447-1.05.67-1.425.596h-6.3a2.685 2.685 0 0 1-1.725-.596c-.525-.447-.75-1.118-.75-1.789V4.123a8.127 8.127 0 0 1-.075-.67c-.02-.224-.038-.448-.075-.671-.075-.522-.225-.97-.375-1.416.225-.037.412-.056.6-.075.187-.018.375-.037.6-.074.45 0 .9 0 1.35.074.375.075.825.298 1.05.671.225.447.375.894.3 1.341 0 .075-.02.298-.038.522-.019.223-.037.447-.037.521v.97h4.2V3.6c0-.447-.075-.894-.15-1.341-.075-.373-.225-.745-.375-1.118.094-.015.18-.03.264-.046.317-.056.58-.103.936-.103.45-.074.975 0 1.425.075.45.074.825.372 1.05.745.225.447.3.969.3 1.416V10.829Zm-3.525-.597c0 .298-.075.596-.225.82-.225.223-.45.298-.75.298h-2.25c-.3 0-.525-.075-.675-.298a1.253 1.253 0 0 1-.225-.745V7.402h4.2l-.075 2.831Zm10.2 10.88c-.225-.224-.525-.299-.9-.299h-7.2c-.525 0-.9-.074-.975-.297-.15-.299-.225-.597-.15-.895V17.09c0-.447-.075-.894-.375-1.267-.3-.298-.675-.522-1.05-.596-.45-.075-.9-.15-1.35-.075-.45 0-.9.075-1.35.15.15.372.3.819.375 1.266.075.373.075.82.075 1.192v2.683c-.075.745.225 1.49.9 1.863.525.298 1.05.447 1.575.447h9.525c.3 0 .6-.075.9-.298.15-.15.3-.447.3-.67 0-.224-.15-.448-.3-.671Z"
+              clip-rule="evenodd"></path>
+          </svg>
+  
+        </a>
+  
+  
+      </h1>
+    </div>
+    
+  </header>
+  
+
+  <main>
+    <section class="funding-summary">
+      <div class="swiper mySwiper3">
+        <ul class="swiper-wrapper flex-container">
+          <!-- 카드 슬라이드들 -->
+          <li class="swiper-slide container">
+            <img src="./assets/images/1.jpg" alt="롤링배너입니다.">
+          </li>
+          <li class="swiper-slide container">
+            <img src="./assets/images/2.jpg" alt="롤링배너입니다.">
+          </li>
+          <li class="swiper-slide container">
+            <img src="./assets/images/3.jpg" alt="롤링배너입니다.">
+          </li>
+        
+        </ul>
+      </div>
+      <div class="funding-summary-txt">
+        <span class="d-day">D-9</span>
+        <h2>자립준비청년의 모험을<br> 응원하는 후드&캠프캡</h2>
+        <h3>666<span>%</span></h3>
+        <span class="graph"></span>
+        <div class="Amount-raised">
+          <p class="goal">1,000,000원목표</p>
+          <p class="present-Amout-raised">6,666,100원</p>
+        </div>
+        <div class="soyf">
+          <span class="logo-small"><img src="./assets/images/logo-small.png" alt="소이프로고"></span>
+          <div class="soyf-intro">
+            <p>소이프</p>
+            <span>자립준비청년의 자립과 성장을...</span>
+          </div>
+          <span class="btn">공감가게<img src="./assets/images/arrow_forward_ios_24dp_5E5E5E_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow btn"></span>
+          
+
+        </div>
+        <div class="reward-choice">리워드선택하기<img src="./assets/images/down-arrow (1).png" alt="다운아이콘"></div>
+        <div class="reward-price">
+          <p>총 수량 0개</p>
+          <p>총 금액 <strong> <span> 0</span>원</strong></p>
+        </div>
+        <div class="delivery-fee">
+          <p class="delivery-fee1">배송비</p>
+          <p>
+           <strong>3,000원</strong> (50,000원 이상 구매 시 무료)
+          </p>
+        </div>
+        <div class="funding-attend-btn">
+          펀딩 참여하기
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+    
+
+        
+  <!-- <section class="intro">
+      <div class="close-day">
+        <h2>종료까지 D-1 7시간 53분 01초 남았습니다.</h2>
+        <a class="participate-btn">
+          <p>펀딩 참여하기</p>
+          <img src="./assets/images/arrow_forward_ios_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="버튼아이콘">
+        </a>
+      </div>
+      <div class="intro-txt">
+        <p>해피빈은 자립준비청년의 모험을 응원합니다.<br>소이프는 '보육시설 청소년'들이 자신의 이야기를 담아 만든 디자인 결과물을 세상에 선보일 수 있는 기회와 경험을 선물합니다.</p>
+        <img src="./assets/images/Untitled-1.png" alt="해피빈x소이프">
+      </div>
+    </section>
+    <section class="package">
+      <div class="package-side-txt">
+        <p>오직 해피빈에서만 선보이는<br>특별한 협업</p>
+        <p>해피빈x소이프<br>포레스트 캠프 세트 발매</p>
+      </div>
+      <div class="package-section">
+        <h2>HAPPYBEAN x SOYF<br>Forest Camp Set</h2>
+        <img src="./assets/images/set.png" alt="포레스트 캠프 세트">
+        <h3>Forest Camp Set</h3>
+        <h4>포레스트 후드티, 포레스트 캠프캡, 허들런 크루 삭스</h4>
+        <p>79,000원</p>
+      </div>
+    </section>
+    <div class="middle-img">
+      <img src="./assets/images/middle.png" alt="중간이미지">
+      <p>"STAND ON YOUR FEET"</p>
+    </div>  -->
+   
+    <section class="editorial">
+      <h3>SPECIAL EDITORIAL BY HAPPYBEAN</h3>
+      <h2>adventure into<br> the forest</h2>
+      <p>자립준비청년들과 숲으로 떠난 모험</p>
+      <img src="./assets/images/editorial.jpg" alt="숲이미지">
+      <h4>자립준비청년들이 아동보육시설을 퇴소해야 하는 나이 만 18세. 2022년부터 만 24세까지 보호 연장이 가능해지긴 했지만, 만 24세 또한 자립도 독립도 쉬운 나이는 아닙니다. 매년 2,000여 명의 자립준비청년이 세상으로 나와 혼자, 처음 세상과 맞서며 홀로서기를 해나갑니다.
+        홀로서기를 하는 자립준비청년들과 좋은 어른을 연결하고 있는 소이프는 함께 자주 모여 숲으로 산으로 모험을 떠나곤 합니다. 산을 오르며 서로를 의지하고, 도전하지 않았던 곳을 가보며 함께하는 즐거움을 발견하곤 합니다. 청년들과 좋은 어른들이 함께하는 즐거운 모험이 오래도록 빛나길 바라며, 숲과 산에서 만난 이야기를 포레스트 캠프 후드티와 포레스트 캠프캡에 담았습니다.</h4>
+        
+      <p>필요한 공부를 연결하고 지원하는 꿈 펀딩</p>
+      <img src="./assets/images/soyf-em.jpg" alt="소이프직원이미지">
+      <h4>사회적기업인 소이프는 이번 펀딩 수익금으로 자립준비청년들이 필요한 공부를 할 수 있도록 연결하고, 지원하려고 합니다. 꿈을 위해 모험을 떠나고 싶은 친구들이 경제적인 이유로 새로운 진로에 도전하는 것을 두려워 하곤 합니다. 이번 펀딩 수익금은 ‘꿈 지원비’로 적립해 새로운 공부와 진로에 도전 하고 싶은 자립준비청년들에게 지원할 계획입니다.</h4>
+      <p>자립준비청년의 이야기를 알리는 디자인 회사, 소이프</p>
+      <h4>소이프(SOYF)는 사회로 나올 ‘보육시설 청소년’들이 스스로 일어서 건강한 사회구성원으로 자립할 수 있도록 디자인 직업 교육을 제공합니다. 디자인 직업 교육을 통해 자신의 이야기를 담아 만든 디자인 결과물을 세상에 선보일 수 있는 기회와 경험을 선물합니다.
+        또한 홀로서기를 해야 하는 ‘자립준비청년들’과는 시간을 보내고, 마음을 나누고, 자립 의지를 키우는 일을 함께 모색합니다. 자립준비청년들과 좋은 어른을 연결하는 다양한 활동을 통해 사회 인식을 바꾸는 따뜻한 변화도 만들어갑니다.
+        소이프는 보육시설 청소년과 자립준비청년들의 이야기를 제품으로 제작하고, 제품의 수익금은 아이들의 자립 기반을 세우는 일에 쓰일 수 있도록 선순환 구조를 만들기 위해 노력하고 있습니다.</h4>
+    </section>
+    <section class="forest-hoodie">
+      <img src="./assets/images/forest-hoodie.png" alt="포레스트후드티" class="forest-hoodie1">
+      <h2>FOREST HOODIE</h2>
+      <h3>포레스트 캠프 후드티셔츠는 오버핏으로 제작되어 다른 옷과 레이어드해 입기 좋습니다.<br>실크스크린 기법으로 친구들과 숲에서 만난 이야기를 디테일하고 재미있게 담은 후드티셔츠입니다.
+      </h3>
+      <ul>
+        <li>- 색상 : 브라운 / 블랙</li>
+        <li>- 사이즈 : S, M, L (남녀 공용)</li>
+        <li>- 소재 : 면 65%, 폴리에스터 35%(양면으로 기모 처리 되어 있습니다)</li>
+        <li>- 제조사 : ㈜소이프스튜디오 / Made in Korea</li>
+        <li>- 모델 사이즈 :
+          여 - 키 : 170cm / 몸무게 : 52kg / 착용사이즈 : M / 핏타입 : 여유</li>
+      </ul>
+      <img src="./assets/images/포레스트 후드티영역사진1.png" alt="백그라운드2" class="forest-hoodie-background">
+
+
+    </section>
+    <div class="swiper mySwiper slide1">
+      <ul class="swiper-wrapper flex-container">
+        <!-- 카드 슬라이드들 -->
+        <li class="swiper-slide container">
+          <img src="./assets/images/포레스트후드티슬라이드1.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/포레스트후드티슬라이드1.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/포레스트후드티슬라이드1.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/포레스트후드티슬라이드1.png" alt="롤링배너입니다.">
+        </li>
+
+      </ul>
+    </div>
+    <section class="forest-campcap">
+      <img src="./assets/images/campcap1.png" alt="포레스트캠프캡" class="forest-campcap1">
+      <h2>FOREST CAMPCAP</h2>
+      <h3>포레스트 캠프캡에는 자립준비청년들과 함께 산을 오르고,<br> 땀을 흘리고, 생명들을 만나는 시간의 이야기를 담았습니다.
+      </h3>
+      <ul>
+        <li>- 색상 : 피콕그린 / 머스타드 / 블랙</li>
+        <li>- 사이즈 : FREE</li>
+        <li>- 소재 : 원단 - 나일론 100% / 부자재 - 면 60%, 나일론 40%</li>
+        <li>- 제조사 : ㈜소이프스튜디오 / Made in Korea</li>
+        
+      </ul>
+      <img src="./assets/images/포레스트캠프캡영역이미지.png" alt="백그라운드2" class="forest-hoodie-background">
+
+
+    </section>
+    <div class="swiper mySwiper slide2">
+      <ul class="swiper-wrapper flex-container">
+        <!-- 카드 슬라이드들 -->
+        <li class="swiper-slide container">
+          <img src="./assets/images/캠프캡슬라이드.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/캠프캡슬라이드.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/캠프캡슬라이드.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/캠프캡슬라이드.png" alt="롤링배너입니다.">
+        </li>
+
+      </ul>
+    </div>
+    <section class="forest-crewsocks">
+      <img src="./assets/images/허들런삭스이미지1.png" alt="허들런삭스" class="forest-crewsocks1">
+      <h2>FOREST CAMPCAP</h2>
+      <h3>허들런 크루삭스 3종에는 마라톤을 시작하는 출발선, 달리기,<br>피니시 라인이 이어지는 장면과 스토리를 담았습니다.
+      </h3>
+      <ul>
+        <li>- 색상 : 스타트(네이비) / 러닝(연베이지) / 피니시(화이트)</li>
+        <li>- 사이즈 : FREE 240~280mm (235mm는 조금 큰듯하지만 신을 수 있어요!)</li>
+        <li>- 소재 : 원단 - 면 65%, 폴리 30%, 폴리우레탄 5%</li>
+        <li>- 제조사 : ㈜소이프스튜디오 / Made in Korea</li>
+      </ul>
+      <img src="./assets/images/크루삭스이미지2개.png" alt="백그라운드2" class="forest-socks-background">
+
+
+    </section>
+    <div class="swiper mySwiper slide3">
+      <ul class="swiper-wrapper flex-container">
+        <!-- 카드 슬라이드들 -->
+        <li class="swiper-slide container">
+          <img src="./assets/images/허들런크루삭스슬라이드.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/허들런크루삭스슬라이드.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/허들런크루삭스슬라이드.png" alt="롤링배너입니다.">
+        </li>
+        <li class="swiper-slide container">
+          <img src="./assets/images/허들런크루삭스슬라이드.png" alt="롤링배너입니다.">
+        </li>
+
+      </ul>
+    </div>
+
+
+    <section class="checkpoint">
+      <h2>CHECK POINT</h2>
+      <ul class="checkpoint-section">
+        <li>
+          <h3>포레스트 캠프 후드티</h3>
+          <img src="./assets/images/후드티사이즈표.jpg" alt="후드티사이즈표" class="img1">
+          <ul>
+            <li>* 남녀공용 사이즈입니다.</li>
+            <li>* 해당 티셔츠는 오버핏으로 제작되어 S은 상의사이즈 90~95까지, M은 95~105, L는 105~110 사이즈를 입는 분들께 추천드립니다.</li>
+            <li>* 다만 올바른 사이즈 선택을 위해 반드시 가지고 계신 옷과 실측 사이즈를 비교 후 선택해 주시기 바랍니다.</li>
+            <li>* 실측 사이즈는 측정 위치, 방법에 따라 약간의 차이(±2cm)가 발생할 수 있습니다.</li>
+            <li>* 촬영 환경 및 모니터 환경에 따라 이미지 색상이 다소 차이가 있을 수 있습니다.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>포레스트 캠프 캡</h3>
+          <img src="./assets/images/캠프캡사이즈표.jpg" alt="캠프캡사이즈표" class="img2">
+          <ul>
+            <li>* 남녀 공용 사이즈입니다.</li>
+            <li>* 왁스 코팅으로 인한 하얗게 보이는 부분이 있을 수 있으나 불량이 아닙니다.</li>
+            <li>* 캠프캡 전용 패키지에 동봉되어 배송됩니다.
+
+            </li>
+            
+          </ul>
+        </li>
+        <li>
+          <h3>허들런 크루 삭스</h3>
+          <img src="./assets/images/허들런사이즈표.png" alt="허들런삭스 사이즈표" class="img3">
+          <ul>
+            <li>* 240 ~ 280mm의 신발 사이즈에 권장해 드립니다.</li>
+            <li>* 남여공용 사이즈입니다.</li>
+            <li>* 발등높이, 발목, 발목두께에 따라 사이즈 차이가 있을 수  있습니다.</li>
+            
+          </ul>
+        </li>
+       
+      </ul>
+      
+     
+    </section>
+  
+  <script>
+
+
+    const swiper = new Swiper(".mySwiper", {
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      speed: 20000,
+      loop: true,
+      slidesPerView: "auto",
+      spaceBetween: 25,
+      observer: false, // DOM 변경 감지 비활성화
+      observeParents: false, // 부모 요소 변경 감지 비활성화
+    });
+
+  </script>
+
+  <script>
+    const swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+   <script>
+    const swiper3 = new Swiper(".mySwiper3", {
+      
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      }
+     
+    });
+  </script>
+</body>
+
+</html>
