@@ -13,9 +13,9 @@
   --font-main-ko : 'SCDream',-apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
   --font-main-en : 'geist',-apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
 
-  --color-primary : #C95933;
-  --color-secondary : #F8EBD3;
-  --color-teriary:#FFA704;
+  --color-primary : #122A5B;
+  --color-secondary : #F9BC52;
+  --color-teriary:#EDEECE;
 
 
   --font-main-title-xxlg:8.75rem; /*  140px */
@@ -44,12 +44,14 @@
 .grid-container{
   display: grid;
 }
-
+html {
+  scroll-behavior: smooth; /* 부드러운 스크롤 적용 */
+}
 body{
   font-family: var(--font-main-ko);
   color: var(--bg-gray);
   word-break: break-all;
   word-wrap: break-word;
 
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
