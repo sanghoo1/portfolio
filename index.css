@@ -311,7 +311,7 @@ header .header-nav .global-menu{
 }
 
 .front {
-  background: url(https://picsum.photos/id/213/440/580) 50% /cover;
+  background: url(./assets/images/123.png) 50% /cover;
   font-size: 0.5em;
   display: flex;
   align-items: center;
@@ -607,6 +607,10 @@ img{
   margin-left: 32px;
   margin-top: 20px;
 
+}
+.skill-list-last {
+  grid-column: 3 / 4;
+  grid-row: 1/ 3;
 }
 
 
