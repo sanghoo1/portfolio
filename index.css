@@ -220,17 +220,6 @@ header .header-nav .global-menu{
   border-radius: 8PX;
 }
 
-.main-slide .swiper .swiper-wrapper .main-bg1{background-image: url(https://placehold.co/1000x600/9B7EBD/fff?text=bg3);}
-.main-slide .swiper .swiper-wrapper .main-bg2{background-image: url(https://placehold.co/1000x600/9B7EBD/fff?text=bg3);}
-.main-slide .swiper .swiper-wrapper .main-bg3{background-image: url(https://placehold.co/1000x600/9B7EBD/fff?text=bg3);}
-.main-slide .swiper .swiper-wrapper .main-bg4{background-image: url(https://placehold.co/1000x600/9B7EBD/fff?text=bg3);}
-
-.main-slide .swiper .swiper-wrapper .main-bg5{background-image: url(https://placehold.co/1000x600/9B7EBD/fff?text=bg3);}
-.main-slide .swiper .swiper-wrapper .main-bg6{background-image: url(https://placehold.co/1000x600/E6C767/fff?text=bg4);}
-
-
-.main-slide .swiper .swiper-wrapper .main-bg7{background-image: url(https://placehold.co/1000x600/E6C767/fff?text=bg7);}
-.main-slide .swiper .swiper-wrapper .main-bg8{background-image: url(https://placehold.co/1000x600/FF885B/fff?text=bg8);}
 
 .swiper-slide, .video-bg {
   transform: translate3d(0, 0, 0); /* 하드웨어 가속 */
